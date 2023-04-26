@@ -27,7 +27,7 @@ import profile from "../assets/profile.png";
 import profile1 from "../assets/profile1.jpeg";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
-import JAlogo from "../assets/JA-logo.png";
+import JAlogo from "../assets/logo.png";
 
 import adidas from "../assets/adidas.png";
 import amazon from "../assets/amazon.png";
