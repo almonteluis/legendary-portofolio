@@ -78,7 +78,7 @@
     margin: 0.75rem 0;
     border-radius: 10px;
     cursor: pointer;
-    background-color: var(--primary-color);
+    background-color: #f2f7fb;
 
     transition: all 0.3s ease-in-out;
 
@@ -127,5 +127,19 @@
   @media screen and (max-width: 768px) {
     width: 100%;
     margin: 1rem 0;
+  }
+}
+#contact .head-text {
+  color: var(--bg1);
+}
+
+#contact .app__footer-form button.p-text {
+  background-color: #b8bb26;
+  color: #fef4f5;
+  opacity: 0.6;
+  transition: 0.3s;
+  &:hover {
+    opacity: 1;
+    color: var(--bg1);
   }
 }

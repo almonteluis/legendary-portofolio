@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: var(--bg1);
+  background-color: #3c383691;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid #3c38362e;
@@ -24,7 +24,6 @@
 
     img {
       width: 90px;
-      height: 20px;
 
       @media screen and (min-width: 2000px) {
         width: 180px;
@@ -53,7 +52,7 @@
       a {
         font-size: 1.2rem;
         font-weight: 500;
-        color: var(--blue-color);
+        color: var(--green) !important;
         text-decoration: none;
         flex-direction: column;
         text-transform: uppercase;
