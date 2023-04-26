@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 // import { ReactTooltip } from "react-tooltip";
 
-import { AppWrap } from "../../wrapper";
+import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 import "./Skills.scss";
 
@@ -14,11 +14,9 @@ const Skills = () => {
     const skillsQuery = '*[_type == "skills"]';
 
     client.fetch(query).then((data) => {
-      console.log(data);
       setExperience(data);
     });
     client.fetch(skillsQuery).then((data) => {
-      console.log(data);
       setSkills(data);
     });
   }, []);
@@ -39,8 +37,8 @@ const Skills = () => {
                 style={{ backgroundColor: skill.bgColor }}
               >
                 <img src={urlFor(skill.icon).url()} alt={skill.name} />
-                <p className='p-text'>{skill.name}</p>
               </div>
+              <p className='p-text'>{skill.name}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -86,4 +84,8 @@ const Skills = () => {
   );
 };
 
-export default AppWrap(Skills, "Skills");
+export default AppWrap(
+  MotionWrap(Skills, "app__skills"),
+  "skills",
+  "app__whitebg"
+);

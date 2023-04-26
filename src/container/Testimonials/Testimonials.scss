@@ -1,0 +1,15 @@
+.app__testimonial-item img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.app__testimonial-content p {
+  padding: 0 2.5em 2em;
+}
+
+.app__testimonial-contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
