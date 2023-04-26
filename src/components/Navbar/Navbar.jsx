@@ -12,7 +12,7 @@ const Navbar = () => {
         <img src={images.JAlogo} alt='logo' className='navbar__logo' />
       </div>
       <ul className='app__navbar-links'>
-        {["Home", "About", "Skills", "Testimonials", "Work"].map((item) => (
+        {["home", "about", "skills", "testimonials", "work"].map((item) => (
           <li className='app__flex p-text' key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -29,7 +29,7 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul className='app__navbar-links'>
-              {["Home", "About", "Skills", "Testimonials", "Work"].map(
+              {["home", "about", "skills", "testimonials", "work"].map(
                 (item) => (
                   <li key={item}>
                     <a href={`#${item}`} onClick={() => setToggle(false)}>
