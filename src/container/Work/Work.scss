@@ -13,6 +13,10 @@
 
   margin: 4rem 0 2rem;
 
+  @media screen and (max-width: 467px) {
+    justify-content: center;
+  }
+
   .app__work-filter-item {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -54,7 +58,7 @@
     margin: 2rem;
     padding: 1rem;
     border-radius: 0.5rem;
-    background-color: #fff;
+    background-color: var(--bg2);
     color: #000;
 
     cursor: pointer;
