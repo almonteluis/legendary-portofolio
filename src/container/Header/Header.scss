@@ -1,6 +1,9 @@
 #home {
-  position: relative;
-  // background: url("../../assets/bgIMG.png");
+  // position: relative;
+  background: url("../../assets/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
   background-color: var(--bg0);
 
   .app__wrapper {
